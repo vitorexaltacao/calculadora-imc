@@ -1,0 +1,57 @@
+/* Estilos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;   /* Define a fonte padrão */
+    background-color: #f4f4f9;   /* cor de fundo da página */
+    display: flex;   /* layout como flexível */
+    justify-content: center; /* centraliza o conteúdo horizontalmente  */
+    align-items: center;   /* centraliza o conteúdo verticalmente */
+    height: 100vh;    /* 100% da altura da viewport */
+    margin: 0;   /* remove a margem padrão do navegador */ 
+}
+
+/* Classe para estilizar um contêiner com aparência limpa e moderna */
+.container { 
+    background-color: white; /* cor de fundo branca */
+    padding: 20px;   /* espaço interno de 20 pixels */
+    border-radius: 10px;    /* cantos arredondados de 10 pixels */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   /* sombra suave ao redor */
+    text-align: center;   /* texto centralizado */
+}
+
+/* Estilo para o título principal */
+h1 {
+    color: #333;   /* cor de texto cinza escuro */
+}
+
+/* Estilo para formulário IMC */
+.imc-form {
+    display: flex;   /* usa flexbox para layout */
+    flex-direction: column;    /* alinha itens em coluna */ 
+    gap: 10px;    /* espaço de 10 pixels entre itens */
+}
+
+/* Estilos para rótulos (labels) */
+label {
+    font-weight: bold;    /* texto em negrito */
+    color: #555;    /* cor de texto em cinza escuro */
+}
+
+/* Estilo para campos de entrada (inputs) */
+input {
+    padding: 8px;   /* espaço interno de 8 pixels */
+    font-size: 16px;   /* tamanho da fonte de 16 pixels */
+    border: 1px solid #ddd;   /* borda de 1 pixel em cinza claro */
+    border-radius: 5px;   /* cantos arredondados de 5 pixels */
+}
+
+/* Estilo para o botão quando o mouse está sobre ele */
+button:hover {
+    background-color: #218838;   /* cor de fundo verde quando o mouse estiver sobre o botão */
+}
+
+/* Estilo para o elemento com id "resultado" */
+#resultado {
+    margin-top: 20px;  /* espaço de 20 pixels em cima do elemento */
+    font-size: 18px;   /* tamanho da fonte de 18 pixels */
+    color: #333;    /* cor de texto em cinza escuro */
+}
