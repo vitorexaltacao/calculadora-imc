@@ -55,3 +55,145 @@ button:hover {
     font-size: 18px;   /* tamanho da fonte de 18 pixels */
     color: #333;    /* cor de texto em cinza escuro */
 }
+
+    /* Novo código /*
+/* conteiner principal*/
+.calculadora-container {
+    display: flex;
+    flex-direction: column; /* alinha itens em coluna*/
+    align-items: center;  /* centraliza horizontalmente*/
+    justify-content: center;  /* centraliza verticalmente*/
+    min-height: 100vh;  /* preenche a tela inteira*/
+    padding: 20px;     /* Espaço interno */
+}
+
+
+/* inputs e botões*/
+
+input, button {
+    margin: 10px 0; /* espaçamento entre elementos*/
+    padding: 10px;   /* Espaço interno */
+    width: 100%;      /* Largura total */
+    max-width: 300px; /* limita o tamanho maximo dos botões */
+    border-radius: 5px;  /* Cantos arredondados */
+    border: 1px solid #ccc;    /* Borda cinza clara */
+    box-sizing: border-box;  /* inclui padding e borda larga*/
+    
+}
+
+
+/* estilo dos botões */
+button {
+    background: linear-gradient(45deg, #3498db, #2ecc71); /* fundo com gradiente */
+    color: white; /* texto branco */
+    border: none; /* remove a borda padrão */
+    cursor: pointer; /* mão ao passar o mouse */
+    transition: background 0.3s ease; /* transição suave */ 
+}
+
+/*efeito ao passar o mouse sobre o botão */
+
+button:hover {
+    background: linear-gradient(45deg, #2ecc71, #3498db); /* inverte o gradiente*/
+}
+
+/* estilo para telas pequenas (mobile) */
+
+@media (max-width: 600px) {
+    .calculadora-container {
+        padding: 10px; /* menos padding em telas pequenas */
+    }
+}
+
+input, button {
+    width: 90%;   /* largura ajustada em telas pequenas */
+}
+/* Estilo para o estado de foco dos inputs e botões */
+input:focus, button:focus {
+    outline: 2px solid #3498db; /* Adiciona um contorno azul claro ao focar */
+    outline-offset: 2px; /* Ajusta a posição do contorno */
+}
+
+/* Transição suave para botões */
+button {
+    transition: background 0.3s ease, transform 0.2s ease; /* Adiciona transição para transformação */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background: linear-gradient(45deg, #2ecc71, #3498db); /* Inverte o gradiente */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
+}
+
+/* Ajusta o espaçamento dos itens no contêiner principal */
+.calculadora-container {
+    gap: 10px; /* Espaço entre itens */
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: red; /* Texto vermelho */
+    font-size: 14px; /* Tamanho da fonte menor */
+    margin-top: 10px; /* Espaço acima da mensagem */
+}
+
+/* Estilo melhorado para campos de entrada */
+input {
+    padding: 10px; /* Aumenta o padding */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna suave */
+}
+
+/* Exemplo de tema escuro */
+body.dark-mode {
+    background-color: #333;
+    color: #eee;
+}
+
+/* Exemplo de animação ao atualizar o resultado */
+#resultado {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #1e1e1e; /* cor de fundo escura com um tom mais moderno */
+    color: #e0e0e0; /* cor do texto clara e suave */
+    text-align: center; /* centraliza o texto */
+    padding: 20px; /* espaço interno confortável */
+    position: fixed; /* fixa o rodapé na parte inferior da página */
+    bottom: 0; /* posição na parte inferior */
+    width: 100%; /* largura total */
+    left: 0; /* alinhado à esquerda */
+    font-size: 16px; /* tamanho da fonte padrão */
+    border-top: 2px solid #333; /* linha superior mais pronunciada */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3); /* sombra sutil para adicionar profundidade */
+    z-index: 1000; /* garante que o rodapé esteja acima de outros elementos */
+    font-family: 'Arial', sans-serif; /* fonte padrão */
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 600px) {
+    .footer {
+        font-size: 14px; /* tamanho da fonte reduzido em telas pequenas */
+        padding: 15px; /* espaço interno ajustado para telas pequenas */
+    }
+}
+
+/* Efeito de hover para links no rodapé (se aplicável) */
+.footer a {
+    color: #4CAF50; /* cor dos links */
+    text-decoration: none; /* remove sublinhado dos links */
+    transition: color 0.3s; /* transição suave na cor dos links */
+}
+
+.footer a:hover {
+    color: #81C784; /* cor dos links quando o mouse está sobre eles */
+}
+
