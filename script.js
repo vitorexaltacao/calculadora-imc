@@ -33,3 +33,9 @@ function calcularIMC() {
     // Exibe o resultado do IMC e a classificação
     document.getElementById("resultado").innerHTML = "Seu IMC é " + imc.toFixed(2) + " (" + classificacao + ").";
 }
+
+// Exemplo de validação simples em JavaScript
+function validarEntrada(valor) {
+    return !isNaN(valor) && valor > 0;
+}
+
